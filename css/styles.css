@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+html, body, main {
+  height: 100%;
+  width: 100%; }
+
+main {
+  display: flex; }
+
+.abi-main--page,
+.abi-inpiration--page {
+  width: 100%; }
+
+.abi-main--wrapper-sections {
+  width: fit-content;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth; }
+
+.abi-main-section {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%; }
+  @media (max-width: 900px) {
+    .abi-main-section {
+      flex-wrap: wrap; } }
+  .abi-main-section .abi-main-section-menu {
+    min-width: 285px;
+    max-width: 585px;
+    width: 40%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .abi-main-section .abi-main-section-menu .goback {
+      text-decoration: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-color: #000000;
+      top: 10vh;
+      left: 60px;
+      color: #FFF;
+      font-size: 24px;
+      font-family: 'Open Sans', sans-serif; }
+      .abi-main-section .abi-main-section-menu .goback .icon-go-back {
+        display: inline-block;
+        width: 3vw;
+        height: 3vw;
+        max-width: 54px;
+        max-height: 54px;
+        min-width: 34px;
+        min-height: 34px;
+        background-image: url("../img/icons/go-back.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 15px; }
+    .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav {
+      padding: 0px 40px;
+      max-width: 408px; }
+      .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav img {
+        width: 100%; }
+      .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul {
+        margin-top: 50px; }
+        .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li {
+          padding: 18px 0px; }
+          .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li.slick-active a {
+            font-weight: bold; }
+          .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li a {
+            transition: 0.6s all;
+            text-decoration: none;
+            color: #FFF;
+            font-size: 24px;
+            font-family: 'Open Sans', sans-serif; }
+    @media (max-width: 1280px) {
+      .abi-main-section .abi-main-section-menu {
+        width: 20%; } }
+    @media (max-width: 1000px) {
+      .abi-main-section .abi-main-section-menu {
+        min-width: 180px; } }
+    @media (max-width: 900px) {
+      .abi-main-section .abi-main-section-menu {
+        min-width: 100% !important;
+        max-width: unset;
+        width: 100%;
+        height: 359px; }
+        .abi-main-section .abi-main-section-menu .goback {
+          top: 49px;
+          right: 29px;
+          left: unset;
+          margin-right: 0px;
+          color: transparent;
+          font-size: 0px;
+          font-family: 'Open Sans', sans-serif; }
+        .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav {
+          margin-top: 30px; }
+          .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav img {
+            max-width: 300px; }
+          .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul {
+            margin-top: 10px; }
+            .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li {
+              padding: 8px 0px; }
+              .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li a {
+                font-size: 18px; } }
+  .abi-main-section .abi-main-section-container {
+    padding: 30px 70px 70px 35px;
+    width: fit-content;
+    min-width: 800px;
+    background-image: url("/img/Textura_papel.svg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto; }
+    .abi-main-section .abi-main-section-container:not(.abi-women-inpiration)::before {
+      content: "";
+      pointer-events: none;
+      background-image: url("/img/icons/scroll-icon.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      position: absolute;
+      right: 0px;
+      width: 50px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      height: 70px;
+      z-index: 2; }
+    .abi-main-section .abi-main-section-container:not(.abi-women-inpiration) h2 {
+      font-size: 72px; }
+    .abi-main-section .abi-main-section-container .abi-women-inpiration h2 {
+      font-size: 3vw; }
+    .abi-main-section .abi-main-section-container h2 {
+      width: 100%;
+      color: #0F446E;
+      margin-bottom: 20px;
+      font-family: 'Canela-Bold'; }
+    .abi-main-section .abi-main-section-container p:not(p:last-child) {
+      margin-bottom: 15px; }
+    .abi-main-section .abi-main-section-container p {
+      color: #0F446E;
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif; }
+
+.abi-interactive-video {
+  margin-top: 50px;
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .abi-interactive-video iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%; }
+
+.abi-interactive-actions {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center; }
+  .abi-interactive-actions button,
+  .abi-interactive-actions a {
+    cursor: pointer;
+    background-color: transparent;
+    color: #0F446E;
+    font-family: "Open Sans", sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0F446E;
+    border-radius: 75px;
+    padding: 10px 60px;
+    width: 100%;
+    font-size: 24px;
+    max-width: 361px;
+    height: 65px;
+    cursor: pointer;
+    text-decoration: none; }
+    .abi-interactive-actions button:active, .abi-interactive-actions button:hover, .abi-interactive-actions button:focus, .abi-interactive-actions button:visited,
+    .abi-interactive-actions a:active,
+    .abi-interactive-actions a:hover,
+    .abi-interactive-actions a:focus,
+    .abi-interactive-actions a:visited {
+      outline: transparent !important; }
+
+.navigation {
+  width: 332px;
+  height: 100%;
+  background-color: red; }
+  @media (max-width: 1023px) {
+    .navigation {
+      display: none; } }
+
+.abi-container-block-information {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0px; }
+  .abi-container-block-information article.block-information:first-child {
+    margin-right: 15px; }
+  .abi-container-block-information article.block-information:last-child {
+    margin-left: 15px; }
+  .abi-container-block-information article.block-information {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    .abi-container-block-information article.block-information header span {
+      margin: 0px auto;
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      .abi-container-block-information article.block-information header span.phone-icon {
+        background-image: url("/img/icons/phone.svg"); }
+      .abi-container-block-information article.block-information header span.calendar-icon {
+        background-image: url("/img/icons/calendar_today.svg"); }
+    .abi-container-block-information article.block-information header h4 {
+      color: #E2231A;
+      font-size: 30px;
+      font-family: 'Open Sans', sans-serif; }
+    .abi-container-block-information article.block-information p.description {
+      margin: 10px 0px;
+      font-size: 20px; }
+    .abi-container-block-information article.block-information .block-information-actions span {
+      display: block;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif; }
+    .abi-container-block-information article.block-information .block-information-actions button {
+      font-size: 20px;
+      width: 90%;
+      height: 65px;
+      cursor: pointer;
+      background-color: transparent;
+      color: #0F446E;
+      font-family: "Open Sans", sans-serif;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #0F446E;
+      border-radius: 75px;
+      padding: 10px 60px;
+      background-color: #E2231A;
+      border-color: transparent;
+      color: #FFF;
+      padding: 0px;
+      cursor: pointer; }
+      .abi-container-block-information article.block-information .block-information-actions button:active, .abi-container-block-information article.block-information .block-information-actions button:hover, .abi-container-block-information article.block-information .block-information-actions button:focus, .abi-container-block-information article.block-information .block-information-actions button:visited {
+        outline: transparent !important; }
+
+.abi-form_content {
+  padding: 30px 0px;
+  max-width: 1444px; }
+  .abi-form_content form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .abi-form_content form #abi-form_content__second_third_step {
+      margin-left: 40px;
+      box-sizing: border-box;
+      padding: 25px;
+      margin-top: 80px;
+      width: 45%;
+      max-width: 401px;
+      min-width: 380px;
+      height: max-content;
+      background-color: rgba(255, 255, 255, 0.9); }
+  .abi-form_content .abi-step_form_header {
+    font-family: "Bemio";
+    color: #0F446E;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 24px;
+    margin: 15px 0px; }
+    .abi-form_content .abi-step_form_header::before {
+      content: '';
+      background-color: #0F446E;
+      width: calc(65% - 44px);
+      height: 1px;
+      top: 50%;
+      margin-top: -0.5px;
+      right: 0px;
+      position: absolute;
+      right: 44px; }
+    .abi-form_content .abi-step_form_header::after {
+      content: '';
+      border: 1px solid #0F446E;
+      border-radius: 50%;
+      position: absolute;
+      height: 43px;
+      width: 43px;
+      top: 50%;
+      margin-top: -21.5px;
+      right: 0px;
+      background-color: transparent;
+      background-image: url(../img/check.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center; }
+  .abi-form_content .abi-form_group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px; }
+    .abi-form_content .abi-form_group.abi-checkboxes {
+      flex-wrap: wrap;
+      margin-top: 20px; }
+    .abi-form_content .abi-form_group .abi-form_item {
+      width: 45%; }
+      .abi-form_content .abi-form_group .abi-form_item.birthday-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .abi-form_content .abi-form_group .abi-form_item.birthday-group label {
+          width: 100%; }
+        .abi-form_content .abi-form_group .abi-form_item.birthday-group select {
+          width: 30%; }
+    .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; }
+      .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox input[type="checkbox"] {
+        margin-right: 20px;
+        height: 20px;
+        width: 20px;
+        min-height: 20px;
+        min-width: 20px;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 0px 0px 2px #4F4F4F;
+        border-radius: 2px; }
+        .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox input[type="checkbox"]:checked {
+          background-color: #000000;
+          background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.12075 0.215994C9.55376 0.558799 9.62689 1.18773 9.28409 1.62074L4.53409 7.62074C4.34402 7.86083 4.05442 8.0006 3.74821 8.00004C3.44199 7.99948 3.15291 7.85865 2.96372 7.61786L0.213724 4.11786C-0.127489 3.68359 -0.0520506 3.05494 0.382221 2.71372C0.816493 2.37251 1.44515 2.44795 1.78636 2.88222L3.75301 5.38522L7.716 0.379337C8.0588 -0.0536794 8.68773 -0.12681 9.12075 0.215994Z' fill='white'/%3E%3C/svg%3E%0A");
+          background-position: center;
+          background-size: 70%;
+          background-repeat: no-repeat;
+          -webkit-box-shadow: 0px 0px 0px 2px #000000; }
+      .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox .description {
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif; }
+        .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox .description a {
+          color: #000000;
+          font-weight: bold; }
+    .abi-form_content .abi-form_group label, .abi-form_content .abi-form_group input {
+      display: block;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px; }
+    .abi-form_content .abi-form_group label {
+      line-height: 22px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #4F4F4F; }
+    .abi-form_content .abi-form_group input:not(input[type="checkbox"]) {
+      background-color: transparent;
+      width: 100%;
+      padding: 10px;
+      padding-left: 0px !important;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      border: none;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: rgba(79, 79, 79, 0.4);
+      color: #4F4F4F;
+      font-weight: bold; }
+      .abi-form_content .abi-form_group input:not(input[type="checkbox"]):hover, .abi-form_content .abi-form_group input:not(input[type="checkbox"]):focus, .abi-form_content .abi-form_group input:not(input[type="checkbox"]):active {
+        outline: 0;
+        outline-color: transparent !important; }
+      .abi-form_content .abi-form_group input:not(input[type="checkbox"]):-webkit-autofill, .abi-form_content .abi-form_group input:not(input[type="checkbox"]):-webkit-autofill:hover, .abi-form_content .abi-form_group input:not(input[type="checkbox"]):-webkit-autofill:focus, .abi-form_content .abi-form_group input:not(input[type="checkbox"]):-webkit-autofill:active {
+        box-shadow: 0 0 0 30px white inset !important;
+        -webkit-box-shadow: 0 0 0 30px white inset !important; }
+      .abi-form_content .abi-form_group input:not(input[type="checkbox"])::placeholder {
+        font-weight: normal !important;
+        color: #4F4F4F;
+        font-weight: bold !important;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px; }
+      .abi-form_content .abi-form_group input:not(input[type="checkbox"]).date {
+        padding-left: 30px !important;
+        background-image: url("../img/icons/calendar_today_gray.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: left; }
+    .abi-form_content .abi-form_group select {
+      width: 100%;
+      display: inline-block;
+      height: 37px;
+      border: 1px solid transparent;
+      border: none;
+      background-repeat: no-repeat, repeat !important;
+      background-position: right .7em top 50%, 0 0 !important;
+      background-size: .95em auto, 100% !important;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: rgba(79, 79, 79, 0.4); }
+      .abi-form_content .abi-form_group select:hover, .abi-form_content .abi-form_group select:focus, .abi-form_content .abi-form_group select:active {
+        outline: 0;
+        outline-color: transparent !important; }
+  .abi-form_content .abi-form-actions {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px; }
+    .abi-form_content .abi-form-actions button {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: transparent;
+      color: #0F446E;
+      font-family: "Open Sans", sans-serif;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #0F446E;
+      border-radius: 75px;
+      padding: 10px 60px; }
+      .abi-form_content .abi-form-actions button:active, .abi-form_content .abi-form-actions button:hover, .abi-form_content .abi-form-actions button:focus, .abi-form_content .abi-form-actions button:visited {
+        outline: transparent !important; }
+
+@media (max-width: 1450px) {
+  .abi-main-section.main-page .abi-main-section-container {
+    min-width: min-content !important; } }
+
+@media (max-width: 1450px) and (min-width: 900px) {
+  article.block-information header h4 {
+    font-size: 2vw !important; }
+  article.block-information p.description {
+    font-size: 1.2vw !important; }
+  article.block-information .block-information-actions span {
+    font-size: 1.1vw !important; }
+  article.block-information .block-information-actions button {
+    font-size: 1.4vw !important;
+    height: 4.5vw !important; } }
+
+@media (max-width: 1280px) {
+  .abi-main-section .abi-main-section-menu.main-page {
+    width: 35% !important; } }
+
+@media (max-width: 900px) {
+  .abi-main--wrapper-sections {
+    height: fit-content; }
+  .abi-main-section.main-page .abi-main-section-menu .abi-main-section-menu-nav {
+    margin-top: 0px !important; }
+  .abi-main-section.main-page .abi-main-section-container {
+    min-width: min-content !important;
+    padding: 30px; }
+    .abi-main-section.main-page .abi-main-section-container h2 {
+      font-size: 40px; }
+    .abi-main-section.main-page .abi-main-section-container blockquote p {
+      font-size: 18px; }
+    .abi-main-section.main-page .abi-main-section-container .abi-form_content form .abi-form_group label:not(.error) {
+      font-size: 15px; }
+    .abi-main-section.main-page .abi-main-section-container .abi-form_content form .abi-form_group input:not(input[type="checkbox"]) {
+      font-size: 18px; }
+    .abi-main-section.main-page .abi-main-section-container::before {
+      content: unset; }
+  .abi-interactive-video {
+    width: 98%;
+    height: 46vw;
+    max-width: 400px;
+    max-height: 200px;
+    padding: 0px 7px;
+    margin: 0px auto;
+    margin-top: 28px; }
+  .abi-interactive-actions button {
+    font-size: 18px;
+    padding: 0px; } }
+
+@media (max-width: 680px) {
+  .abi-main-section.main-page .abi-main-section-menu {
+    background-image: url("/img/header-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125%; }
+  .abi-main-section.main-page .abi-main-section-container .abi-form_content {
+    padding: 0px !important;
+    max-width: 600px;
+    margin: 0px auto;
+    margin-top: 30px; }
+    .abi-main-section.main-page .abi-main-section-container .abi-form_content form .abi-form_group {
+      margin-bottom: 0px;
+      flex-wrap: wrap; }
+      .abi-main-section.main-page .abi-main-section-container .abi-form_content form .abi-form_group .abi-form_item {
+        width: 100%;
+        margin-bottom: 20px; }
+  .abi-container-block-information {
+    flex-wrap: wrap;
+    max-width: 600px; }
+    .abi-container-block-information article.block-information {
+      margin-bottom: 50px;
+      width: 100%; }
+      .abi-container-block-information article.block-information header h4 {
+        font-size: 24px !important; }
+      .abi-container-block-information article.block-information header p.description {
+        font-size: 18px !important; }
+      .abi-container-block-information article.block-information .block-information-actions span {
+        font-size: 17px !important; }
+      .abi-container-block-information article.block-information .block-information-actions button {
+        padding: 0px;
+        font-size: 17px !important; } }
+
+.abi-inpiration--page {
+  width: 100%;
+  height: 100%; }
+
+.abi-main-section-container.abi-women-inpiration h2 {
+  margin-top: 4vh;
+  margin-bottom: 36px;
+  font-size: 4vw; }
+
+.abi-slide--inspiration {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px; }
+  .abi-slide--inspiration.slick-initialized {
+    width: 100% !important; }
+  .abi-slide--inspiration .abi-inspiration--cases {
+    max-width: 777px;
+    max-height: 793px;
+    min-height: 777px;
+    height: 53vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .abi-slide--inspiration .abi-inspiration--cases.one-case {
+      padding-top: 25%; }
+      .abi-slide--inspiration .abi-inspiration--cases.one-case .inpiration-women-image {
+        margin-top: -20px; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women .inpiration-women-image {
+        position: relative; }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women .inpiration-women-image img {
+          position: absolute; }
+      .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article h3 {
+        width: 94%;
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+        color: #0F446E; }
+      .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article b {
+        color: #0F446E;
+        font-size: 19px;
+        font-family: 'Open Sans', sans-serif; }
+      .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article p {
+        line-height: 24px;
+        margin-top: 10px;
+        color: #0F446E;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif; }
+      .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women:not(.reverse) {
+        height: calc(445px / 1.3); }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women:not(.reverse) .inpiration-women-image img {
+          top: 0px;
+          max-width: 339px; }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women:not(.reverse) article {
+          margin-top: 40px;
+          max-width: 388px;
+          height: fit-content; }
+      .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women.reverse {
+        height: calc(445px / 1.4);
+        flex-direction: row-reverse;
+        align-items: stretch;
+        position: absolute;
+        bottom: 0px; }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women.reverse .inpiration-women-image img {
+          bottom: 0px;
+          max-width: 388px;
+          right: 0px; }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women.reverse article {
+          width: 47%;
+          max-width: 388px; }
+
+.abi-slide--inspiration.slick-slider {
+  position: relative; }
+  .abi-slide--inspiration.slick-slider .slick-dots {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    right: -40px;
+    width: 28px;
+    height: fit-content;
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .abi-slide--inspiration.slick-slider .slick-dots::before {
+      content: "";
+      position: absolute;
+      background-image: url("/img/icons/scroll-icon-red.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      width: 70%;
+      height: 100px;
+      bottom: 0px;
+      margin: 0px auto; }
+    .abi-slide--inspiration.slick-slider .slick-dots li button {
+      cursor: pointer;
+      font-size: 1px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #E2231A; }
+      .abi-slide--inspiration.slick-slider .slick-dots li button:active, .abi-slide--inspiration.slick-slider .slick-dots li button:hover, .abi-slide--inspiration.slick-slider .slick-dots li button:focus, .abi-slide--inspiration.slick-slider .slick-dots li button:visited {
+        outline: transparent !important; }
+    .abi-slide--inspiration.slick-slider .slick-dots li.slick-active button {
+      background-color: #E2231A; }
+
+@media (max-width: 1450px) {
+  .abi-slide--inspiration .abi-inspiration--cases {
+    max-width: 54vw !important;
+    width: 100% !important;
+    height: 49vw;
+    min-height: 654px; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women .inpiration-women-image img {
+      width: 25vw;
+      min-width: 298px; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women:not(.reverse) article {
+      width: 25vw;
+      min-width: 298px; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women.reverse {
+      width: 100%;
+      height: auto !important; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article h3 {
+      font-size: 20px !important; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article b {
+      font-size: 19px !important; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article p {
+      font-size: 15px !important;
+      line-height: initial; } }
+
+@media (max-width: 1280px) {
+  .abi-main-section-menu {
+    min-width: 200px !important; }
+  .abi-main-section-container.abi-women-inpiration {
+    min-width: unset; }
+  .abi-slide--inspiration .abi-inspiration--cases {
+    width: 616px;
+    min-height: 600px;
+    height: 47vw !important;
+    min-height: 573px !important; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women .inpiration-women-image img {
+      width: 21vw;
+      min-width: 230px; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women:not(.reverse) article {
+      width: 21vw;
+      min-width: 230px; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women.reverse article {
+      width: 18vw;
+      min-width: 220px; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article h3 {
+      font-size: 16px !important; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article b {
+      font-size: 15px !important; }
+    .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article p {
+      font-size: 12px !important; } }
+
+@media (max-width: 1000px) {
+  .abi-main-section-menu {
+    min-width: 285px !important; }
+  .abi-main-section-container.abi-women-inpiration {
+    width: 80%; } }
+
+@media screen and (max-width: 900px) {
+  .abi-main-section-container.abi-women-inpiration {
+    padding: 0px 20px; }
+  .abi-inpiration--page {
+    height: min-content;
+    border: 3px solid black; }
+  .abi-main-section-container.abi-women-inpiration {
+    width: 100%;
+    overflow: hidden; }
+    .abi-main-section-container.abi-women-inpiration h2 {
+      display: none; }
+  .abi-slide--inspiration {
+    margin-left: 0px !important;
+    margin-top: 15px; }
+    .abi-slide--inspiration .abi-inspiration--cases {
+      min-height: unset !important;
+      max-height: unset;
+      width: 100%;
+      height: unset !important;
+      margin: 0px auto; }
+      .abi-slide--inspiration .abi-inspiration--cases.one-case {
+        padding-top: 0px !important; }
+        .abi-slide--inspiration .abi-inspiration--cases.one-case .abi-inspiration-women .inpiration-women-image {
+          margin-top: 0px !important; }
+      .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women {
+        margin-bottom: 20px;
+        display: block;
+        height: initial !important; }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women .inpiration-women-image {
+          text-align: center;
+          width: 100%;
+          height: fit-content; }
+          .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women .inpiration-women-image img {
+            position: unset;
+            width: 95%;
+            min-width: 95%;
+            max-width: unset !important; }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article {
+          margin-top: 10px !important;
+          width: 100% !important;
+          min-width: unset !important;
+          max-width: unset !important; }
+          .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article h3 {
+            font-size: 20px; }
+          .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article b {
+            font-size: 19px; }
+          .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article p {
+            font-size: 16px; }
+        .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women.reverse {
+          position: unset; } }
+
+@media screen and (max-width: 559px) {
+  .abi-slide--inspiration .abi-inspiration--cases {
+    max-width: 100% !important; } }
+
+* {
+  padding: 0px;
+  margin: 0px; }
+
+li {
+  list-style: none; }
+
+@font-face {
+  font-family: 'Canela-Bold';
+  src: url("fonts/Canela-Bold.otf"); }

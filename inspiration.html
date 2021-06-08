@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+</head>
+<body>
+    <main>
+        <aside class="navigation"></aside>
+        <div class="abi-inpiration--page">
+            <section class="abi-main-section">
+                <aside class="abi-main-section-menu">
+                    <a class="goback" href="/">
+                        <span class="icon-go-back"></span> Atrás
+                    </a>
+                    <nav class="abi-main-section-menu-nav">
+                        <img src="/img/menu-logo.svg" alt="">
+                        <ul>
+                            <li>
+                                 <a href="">2021</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <section class="abi-main-section-container abi-women-inpiration">
+                    <h2>Mujeres que inspiran</h2>
+                    <section class="abi-slide--inspiration">
+                        <div class="abi-inspiration--cases">
+                            <div class="abi-inspiration-women">
+                                <div class="inpiration-women-image">
+                                    <img src="/img/inpiration/img-1.png" alt="">
+                                </div>
+                                <article>
+                                    <h3>EMILIANA CONDORÍ </h3>
+                                    <b>Ícono de la gastronomía Boliviana</b>
+                                    <p>
+                                        Las calles del centro de La Paz no serían lo mismo sin sus rellenos de papa;
+                                        plato tradicional que vende desde hace más de 3 décadas y son el sustento de su familia. 
+                                        Su historia recorrió el mundo en la última producción de Netflix “Street food”.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="abi-inspiration-women reverse">
+                                <div class="inpiration-women-image">
+                                    <img src="/img/inpiration/img-2.png" alt="">
+                                </div>
+                                <article>
+                                    <h3>MARIA FERNANDA GUTIERREZ E IRENE SUAREZ</h3>
+                                    <b>Fundadora de Beauty plataforma de apoyo al sector de la belleza</b>
+                                    <p>
+                                        Ambas son mujeres que piensan en otras mujeres. Gracias al desarrollo de su app,
+                                        le dieron herramientas a peluquerías de nuestro país para que puedan volver a
+                                        abrir sus puertas y trabajar por un futuro mejor.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                        
+                        <div class="abi-inspiration--cases">
+                            <div class="abi-inspiration-women">
+                                <div class="inpiration-women-image">
+                                    <img src="/img/inpiration/img-3.png" alt="">
+                                </div>
+                                <article>
+                                    <h3>PAOLA VELAZQUEZ</h3>
+                                    <b>Primera mujer piloto de Bolivia</b>
+                                    <p>
+                                        Un ejemplo y una fuente de inspiración para todas aquellas mujeres que quieren ser pilotos de su propio destino.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="abi-inspiration-women reverse">
+                                <div class="inpiration-women-image">
+                                    <img src="/img/inpiration/img-4.png" alt="">
+                                </div>
+                                <article>
+                                    <h3>SAAVEDRA ORDOÑEZ</h3>
+                                    <b>Líder potosina nacida para inspirar y ayudar</b>
+                                    <p>
+                                        Su misión es clara, erradicar el machismo en el hogar.
+                                        Gracias a diferentes charlas e iniciativas lleva adelante esta lucha utilizando como arma la educación.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="abi-inspiration--cases one-case">
+                            <div class="abi-inspiration-women">
+                                <div class="inpiration-women-image">
+                                    <img src="/img/inpiration/img-5.png" alt="">
+                                </div>
+                                <article>
+                                    <h3>SHARON PEREZ</h3>
+                                    <b>Artista. Revalorizando la esencia del pueblo afroboliviano</b>
+                                    <p>
+                                        Sus obras reflejan la identidad del pueblo afroboliviano y ayudan a romper los estereotipos.
+                                        Además ella promueve el desarrollo de otros artistas que comparten su misma visión: rescatar la esencia de nuestras raíces.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <nav class="abi-slide--inspiration-dots"></nav>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        function buildSlides() {
+            var windowWidth = $(window).width();
+            var slider = $('.abi-slide--inspiration');
+            // console.error(windowWidth);
+            // console.info(slider.hasClass('slick-initialized'))
+            if (windowWidth > 900 && !slider.hasClass('slick-initialized')) {
+                $('.abi-slide--inspiration').slick({
+                    initialSlide: 0,
+                    rows: 0,
+                    autoplay: false,
+                    arrows: false,
+                    dots: true,
+                    apenndDots: $(".abi-slide--inspiration-dots"),
+                    // customPaging: function(slider, i) {
+                    //     const index = i;
+                    //     var sliders = $('.el-custom--history-page__slider .el-custom--history-page__slide')[index];
+                    //     var slideName = $(sliders).attr('data-attr-history-name')
+                    //     return '<span class="dot">'+slideName+'</span>';
+                    //   },
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    infinite: false,
+                    vertical: true,
+                    speed: 1000,
+                    useTransform: true,
+                    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+                });
+            }
+            else if(windowWidth < 900) {
+                $('.abi-slide--inspiration').slick('unslick');
+            }
+        }
+        $(window).resize(function(){
+             buildSlides();
+        });
+        buildSlides();
+    });
+    // slider.on('wheel', (function(e) {
+    //     e.preventDefault();
+    //     if (e.originalEvent.deltaY < 0) {
+    //       $(this).slick('slickNext');
+    //     } else {
+    //       $(this).slick('slickPrev');
+    //     }
+    // }));
+</script>
+</html>
