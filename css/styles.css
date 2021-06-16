@@ -8,7 +8,8 @@ main {
 
 .abi-main--page,
 .abi-inpiration--page {
-  width: 100%; }
+  width: 100%;
+  height: calc(100vh - 48px); }
 
 .abi-main--wrapper-sections {
   width: fit-content;
@@ -322,6 +323,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; }
+        .abi-form_content .abi-form_group .abi-form_item.birthday-group div.js-form-item {
+          width: 100%; }
         .abi-form_content .abi-form_group .abi-form_item.birthday-group label {
           width: 100%; }
         .abi-form_content .abi-form_group .abi-form_item.birthday-group select {
@@ -347,6 +350,11 @@ main {
           background-size: 70%;
           background-repeat: no-repeat;
           -webkit-box-shadow: 0px 0px 0px 2px #000000; }
+      .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox label {
+        margin-top: 5px; }
+        .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox label a {
+          color: #000000;
+          text-decoration: underline; }
       .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox .description {
         font-size: 15px;
         font-family: 'Open Sans', sans-serif; }
@@ -355,6 +363,7 @@ main {
           font-weight: bold; }
     .abi-form_content .abi-form_group label, .abi-form_content .abi-form_group input {
       display: block;
+      border-radius: 0px !important;
       font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -419,7 +428,8 @@ main {
     width: 100%;
     text-align: center;
     margin: 20px 0px; }
-    .abi-form_content .abi-form-actions button {
+    .abi-form_content .abi-form-actions button,
+    .abi-form_content .abi-form-actions input.button {
       font-weight: bold;
       cursor: pointer;
       background-color: transparent;
@@ -430,7 +440,11 @@ main {
       border-color: #0F446E;
       border-radius: 75px;
       padding: 10px 60px; }
-      .abi-form_content .abi-form-actions button:active, .abi-form_content .abi-form-actions button:hover, .abi-form_content .abi-form-actions button:focus, .abi-form_content .abi-form-actions button:visited {
+      .abi-form_content .abi-form-actions button:active, .abi-form_content .abi-form-actions button:hover, .abi-form_content .abi-form-actions button:focus, .abi-form_content .abi-form-actions button:visited,
+      .abi-form_content .abi-form-actions input.button:active,
+      .abi-form_content .abi-form-actions input.button:hover,
+      .abi-form_content .abi-form-actions input.button:focus,
+      .abi-form_content .abi-form-actions input.button:visited {
         outline: transparent !important; }
 
 @media (max-width: 1450px) {
@@ -515,9 +529,12 @@ main {
         padding: 0px;
         font-size: 17px !important; } }
 
+@media (min-width: 990px) {
+  .dialog-off-canvas-main-canvas .container-all .navbar-lateral {
+    height: unset !important; } }
+
 .abi-inpiration--page {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 .abi-main-section-container.abi-women-inpiration h2 {
   margin-top: 4vh;
@@ -540,7 +557,7 @@ main {
     flex-wrap: wrap;
     width: 100%; }
     .abi-slide--inspiration .abi-inspiration--cases.one-case {
-      padding-top: 25%; }
+      padding-top: 10%; }
       .abi-slide--inspiration .abi-inspiration--cases.one-case .inpiration-women-image {
         margin-top: -20px; }
     .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women {
@@ -600,7 +617,7 @@ main {
     z-index: 2;
     right: -40px;
     width: 28px;
-    height: fit-content;
+    height: max-content;
     padding-bottom: 100px;
     text-align: center;
     display: flex;
@@ -609,7 +626,7 @@ main {
     .abi-slide--inspiration.slick-slider .slick-dots::before {
       content: "";
       position: absolute;
-      background-image: url("/img/icons/scroll-icon-red.svg");
+      background-image: url("../img/icons/scroll-icon-red.svg");
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain;
@@ -688,8 +705,7 @@ main {
   .abi-main-section-container.abi-women-inpiration {
     padding: 0px 20px; }
   .abi-inpiration--page {
-    height: min-content;
-    border: 3px solid black; }
+    height: min-content; }
   .abi-main-section-container.abi-women-inpiration {
     width: 100%;
     overflow: hidden; }

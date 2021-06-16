@@ -28,9 +28,15 @@ main{
 .abi-main--page,
 .abi-inpiration--page{
     width: 100%;
+    // height: 94.95vh;
+    height: calc(100vh - 48px);
 }
+// .abi-inpiration--page {
+//     height: 95vh;
+// }
 .abi-main--wrapper-sections{
     width: fit-content;
+    // height: 95.3vh;
     height: 100%;
     overflow-y: auto;
     scroll-behavior: smooth;
@@ -49,6 +55,7 @@ main{
         max-width: 585px;
         width: 40%;
         height: 100%;
+        // height: 95.3vh;
         background-color: $tertiary_color;
         display: flex;
         justify-content: center;
@@ -410,6 +417,9 @@ main{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                div.js-form-item{
+                    width: 100%;
+                }
                 label{
                     width: 100%;
                 }
@@ -455,6 +465,13 @@ main{
                         -webkit-box-shadow: 0px 0px 0px 2px $tertiary_color;
                     }
                 }
+                label{
+                    margin-top: 5px;
+                    a{
+                        color: $tertiary_color;
+                        text-decoration: underline;
+                    }
+                }
                 .description{
                     font: {
                         size: 15px;
@@ -469,6 +486,7 @@ main{
         }
         label, input{
             display: block;
+            border-radius: 0px !important;
             font: {
                 family: $general_font;
                 style: normal;
@@ -560,7 +578,8 @@ main{
         width: 100%;
         text-align: center;
         margin: 20px 0px;
-        button{
+        button,
+        input.button{
             font-weight: bold;
             @include btn-primary; 
         }
@@ -717,6 +736,15 @@ main{
                     padding: 0px;
                     font-size: 17px !important;
                 }
+            }
+        }
+    }
+}
+@media (min-width: 990px) {
+    .dialog-off-canvas-main-canvas{
+        .container-all {
+            .navbar-lateral{
+                height: unset !important;
             }
         }
     }

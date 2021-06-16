@@ -112,53 +112,7 @@
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/womenModel.js"></script>
 <script>
-    $(document).ready(function(){
-        function buildSlides() {
-            var windowWidth = $(window).width();
-            var slider = $('.abi-slide--inspiration');
-            // console.error(windowWidth);
-            // console.info(slider.hasClass('slick-initialized'))
-            if (windowWidth > 900 && !slider.hasClass('slick-initialized')) {
-                $('.abi-slide--inspiration').slick({
-                    initialSlide: 0,
-                    rows: 0,
-                    autoplay: false,
-                    arrows: false,
-                    dots: true,
-                    apenndDots: $(".abi-slide--inspiration-dots"),
-                    // customPaging: function(slider, i) {
-                    //     const index = i;
-                    //     var sliders = $('.el-custom--history-page__slider .el-custom--history-page__slide')[index];
-                    //     var slideName = $(sliders).attr('data-attr-history-name')
-                    //     return '<span class="dot">'+slideName+'</span>';
-                    //   },
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    draggable: true,
-                    infinite: false,
-                    vertical: true,
-                    speed: 1000,
-                    useTransform: true,
-                    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
-                });
-            }
-            else if(windowWidth < 900) {
-                $('.abi-slide--inspiration').slick('unslick');
-            }
-        }
-        $(window).resize(function(){
-             buildSlides();
-        });
-        buildSlides();
-    });
-    // slider.on('wheel', (function(e) {
-    //     e.preventDefault();
-    //     if (e.originalEvent.deltaY < 0) {
-    //       $(this).slick('slickNext');
-    //     } else {
-    //       $(this).slick('slickPrev');
-    //     }
-    // }));
 </script>
 </html>
