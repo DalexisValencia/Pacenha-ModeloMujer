@@ -11,6 +11,7 @@ $(window).on("load", function() {
                 $(".abi-main-section-menu-nav ul li a").each(function() {
                     if ($(this).attr('href') == '#' + identy) {
                         $(this).parent().addClass('slick-active');
+                        resetVideos();
                     }
                 });
             },
@@ -26,7 +27,14 @@ $(window).on("load", function() {
             console.error('.abi-main--wrapper-sections .abi-main-section-container' + identy)
             $('.abi-main--wrapper-sections .abi-main-section-container' + identy).addClass('active')
         }
-        console.info('sho vivo', windowWidth)
+        resetVideos();
     });
-    console.log('la info es');
+
+    function resetVideos() {
+        $('.abi-interactive-video iframe').each(function() {
+            const beforeLink = $(this).attr("src");
+            $(this).attr("src", beforeLink)
+                // console.error($(this).attr("src"));
+        });
+    }
 });
