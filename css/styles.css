@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
-html, body, main {
+html,
+body,
+main {
   height: 100%;
   width: 100%; }
 
@@ -9,13 +11,25 @@ main {
 .abi-main--page,
 .abi-inpiration--page {
   width: 100%;
-  height: calc(100vh - 48px); }
+  height: calc(100vh - 44px); }
 
 .abi-main--wrapper-sections {
   width: fit-content;
   height: 100%;
   overflow-y: auto;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  scrollbar-color: #E2231A rgba(221, 221, 221, 0.6);
+  scrollbar-width: thin;
+  /* Track */
+  /* Handle */ }
+  .abi-main--wrapper-sections::-webkit-scrollbar {
+    width: 10px; }
+  .abi-main--wrapper-sections::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(221, 221, 221, 0.6); }
+  .abi-main--wrapper-sections::-webkit-scrollbar-thumb {
+    background: #E2231A;
+    border-radius: 0px; }
 
 .abi-main-section {
   display: flex;
@@ -69,6 +83,9 @@ main {
       .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul {
         margin-top: 50px; }
         .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li {
+          color: #FFF;
+          font-size: 18px;
+          font-family: 'Open Sans', sans-serif;
           padding: 18px 0px; }
           .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li.slick-active a {
             font-weight: bold; }
@@ -76,7 +93,7 @@ main {
             transition: 0.6s all;
             text-decoration: none;
             color: #FFF;
-            font-size: 24px;
+            font-size: 18px;
             font-family: 'Open Sans', sans-serif; }
     @media (max-width: 1280px) {
       .abi-main-section .abi-main-section-menu {
@@ -105,9 +122,10 @@ main {
           .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul {
             margin-top: 10px; }
             .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li {
-              padding: 8px 0px; }
+              padding: 8px 0px;
+              font-size: 16px; }
               .abi-main-section .abi-main-section-menu .abi-main-section-menu-nav ul li a {
-                font-size: 18px; } }
+                font-size: 16px; } }
   .abi-main-section .abi-main-section-container {
     padding: 30px 70px 70px 35px;
     width: fit-content;
@@ -134,11 +152,13 @@ main {
       bottom: 0;
       height: 70px;
       z-index: 2; }
-    .abi-main-section .abi-main-section-container:not(.abi-women-inpiration) h2 {
-      font-size: 72px; }
+    .abi-main-section .abi-main-section-container:not(.abi-women-inpiration) > h2,
+    .abi-main-section .abi-main-section-container:not(.abi-women-inpiration) > h1 {
+      font-size: 70px; }
     .abi-main-section .abi-main-section-container .abi-women-inpiration h2 {
       font-size: 3vw; }
-    .abi-main-section .abi-main-section-container h2 {
+    .abi-main-section .abi-main-section-container > h2,
+    .abi-main-section .abi-main-section-container > h1 {
       width: 100%;
       color: #0F446E;
       margin-bottom: 20px;
@@ -147,7 +167,7 @@ main {
       margin-bottom: 15px; }
     .abi-main-section .abi-main-section-container p {
       color: #0F446E;
-      font-size: 20px;
+      font-size: 16px;
       font-family: 'Open Sans', sans-serif; }
 
 .abi-interactive-video {
@@ -222,10 +242,11 @@ main {
       background-repeat: no-repeat;
       background-size: contain; }
       .abi-container-block-information article.block-information header span.phone-icon {
-        background-image: url("/img/icons/phone.svg"); }
+        background-image: url("../img/icons/phone.svg"); }
       .abi-container-block-information article.block-information header span.calendar-icon {
-        background-image: url("/img/icons/calendar_today.svg"); }
-    .abi-container-block-information article.block-information header h4 {
+        background-image: url("../img/icons/calendar_today.svg"); }
+    .abi-container-block-information article.block-information header h4,
+    .abi-container-block-information article.block-information header h2 {
       color: #E2231A;
       font-size: 30px;
       font-family: 'Open Sans', sans-serif; }
@@ -361,7 +382,8 @@ main {
         .abi-form_content .abi-form_group .js-form-item.js-form-type-checkbox .description a {
           color: #000000;
           font-weight: bold; }
-    .abi-form_content .abi-form_group label, .abi-form_content .abi-form_group input {
+    .abi-form_content .abi-form_group label,
+    .abi-form_content .abi-form_group input {
       display: block;
       border-radius: 0px !important;
       font-family: "Open Sans", sans-serif;
@@ -452,7 +474,8 @@ main {
     min-width: min-content !important; } }
 
 @media (max-width: 1450px) and (min-width: 900px) {
-  article.block-information header h4 {
+  article.block-information header h4,
+  article.block-information header h2 {
     font-size: 2vw !important; }
   article.block-information p.description {
     font-size: 1.2vw !important; }
@@ -467,14 +490,22 @@ main {
     width: 35% !important; } }
 
 @media (max-width: 900px) {
+  .abi-main--page,
+  .abi-inpiration--page {
+    height: auto !important; }
   .abi-main--wrapper-sections {
     height: fit-content; }
+    .abi-main--wrapper-sections .abi-main-section-container:not(.active) {
+      display: none; }
+    .abi-main--wrapper-sections .abi-main-section-container.active {
+      padding: 50px 30px !important; }
   .abi-main-section.main-page .abi-main-section-menu .abi-main-section-menu-nav {
     margin-top: 0px !important; }
   .abi-main-section.main-page .abi-main-section-container {
     min-width: min-content !important;
     padding: 30px; }
-    .abi-main-section.main-page .abi-main-section-container h2 {
+    .abi-main-section.main-page .abi-main-section-container > h2,
+    .abi-main-section.main-page .abi-main-section-container > h1 {
       font-size: 40px; }
     .abi-main-section.main-page .abi-main-section-container blockquote p {
       font-size: 18px; }
@@ -515,11 +546,14 @@ main {
         margin-bottom: 20px; }
   .abi-container-block-information {
     flex-wrap: wrap;
-    max-width: 600px; }
+    max-width: 600px;
+    margin-bottom: 0px; }
     .abi-container-block-information article.block-information {
       margin-bottom: 50px;
+      margin-left: 0px !important;
       width: 100%; }
-      .abi-container-block-information article.block-information header h4 {
+      .abi-container-block-information article.block-information header h4,
+      .abi-container-block-information article.block-information header h2 {
         font-size: 24px !important; }
       .abi-container-block-information article.block-information header p.description {
         font-size: 18px !important; }
@@ -530,16 +564,50 @@ main {
         font-size: 17px !important; } }
 
 @media (min-width: 990px) {
-  .dialog-off-canvas-main-canvas .container-all .navbar-lateral {
-    height: unset !important; } }
+  .dialog-off-canvas-main-canvas .container-all {
+    height: calc(100vh - 45px) !important; }
+    .dialog-off-canvas-main-canvas .container-all .navbar-lateral {
+      height: unset !important; }
+  html {
+    overflow: hidden; } }
 
 .abi-inpiration--page {
   width: 100%; }
 
-.abi-main-section-container.abi-women-inpiration h2 {
-  margin-top: 4vh;
-  margin-bottom: 36px;
-  font-size: 4vw; }
+.abi-main-section-container.abi-women-inpiration {
+  scrollbar-color: #E2231A rgba(221, 221, 221, 0.6);
+  scrollbar-width: thin;
+  /* Track */
+  /* Handle */
+  padding-bottom: 0px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .abi-main-section-container.abi-women-inpiration::-webkit-scrollbar {
+    width: 10px; }
+  .abi-main-section-container.abi-women-inpiration::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(221, 221, 221, 0.6); }
+  .abi-main-section-container.abi-women-inpiration::-webkit-scrollbar-thumb {
+    background: #E2231A;
+    border-radius: 0px; }
+  .abi-main-section-container.abi-women-inpiration h2 {
+    width: 100%;
+    margin-top: 4vh;
+    margin-bottom: 36px;
+    font-size: 4vw; }
+  .abi-main-section-container.abi-women-inpiration::before {
+    content: "";
+    position: fixed;
+    right: 25px;
+    height: 80px;
+    width: 20px;
+    background-image: url(../img/icons/scroll-icon-red.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain; }
 
 .abi-slide--inspiration {
   display: flex;
@@ -555,8 +623,11 @@ main {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
     .abi-slide--inspiration .abi-inspiration--cases.one-case {
+      min-height: 429px;
+      height: 35vw;
       padding-top: 10%; }
       .abi-slide--inspiration .abi-inspiration--cases.one-case .inpiration-women-image {
         margin-top: -20px; }
@@ -573,6 +644,7 @@ main {
         width: 94%;
         font-size: 24px;
         font-family: 'Open Sans', sans-serif;
+        font-weight: bold !important;
         color: #0F446E; }
       .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article b {
         color: #0F446E;
@@ -610,6 +682,7 @@ main {
 .abi-slide--inspiration.slick-slider {
   position: relative; }
   .abi-slide--inspiration.slick-slider .slick-dots {
+    background-color: #FFF;
     position: absolute;
     margin: auto;
     top: 0;
@@ -747,7 +820,9 @@ main {
           .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article b {
             font-size: 19px; }
           .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women article p {
-            font-size: 16px; }
+            font-size: 16px !important;
+            line-height: 21px !important;
+            text-align: justify !important; }
         .abi-slide--inspiration .abi-inspiration--cases .abi-inspiration-women.reverse {
           position: unset; } }
 
